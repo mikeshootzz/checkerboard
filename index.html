@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkerboard</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<h1 id="game">Game</h1>
+<h1 class="template">Template</h1>
+
+<table>
+    <tr>
+        <td><button class="game" id="button" onclick="changeColor()"></button></td>
+        <td><button class="game" id="button2" onclick="changeColor2()"></button></td>
+        <td><button class="game" id="button3" onclick="changeColor3()"></button></td>
+    </tr>
+    <tr>
+        <td><button class="game" id="button4" onclick="changeColor4()"></button></td>
+        <td><button class="game" id="button5" onclick="changeColor5()"></button></td>
+        <td><button class="game" id="button6" onclick="changeColor6()"></button></td>
+    </tr>
+    <tr>
+        <td><button class="game" id="button7" onclick="changeColor7()"></button></td>
+        <td><button class="game" id="button8" onclick="changeColor8()"></button></td>
+        <td><button class="game" id="button9" onclick="changeColor9()"></button></td>
+    </tr>
+</table>
+<table class="colors">
+    <tr class="colors">
+        <td class="colors"><button id="red" onclick="setred()">Rot</button></td>
+        <td class="colors"><button id="green" onclick="setgreen()">Grün</button></td>
+    </tr>
+</table>
+
+<table id="templateblock">
+    <tr>
+        <td><div class="game" id="template"></div></td>
+        <td><div class="game" id="template2"></div></td>
+        <td><div class="game" id="template3"></div></td>
+    </tr>
+    <tr>
+        <td><div class="game" id="template4"></div></td>
+        <td><div class="game" id="template5"></div></td>
+        <td><div class="game" id="template6"></div></td>
+    </tr>
+    <tr>
+        <td><div class="game" id="template7"></div></td>
+        <td><div class="game" id="template8"></div></td>
+        <td><div class="game" id="template9"></div></td>
+    </tr>
+</table>
+<script  src="script.js"></script>
+</body>
+</html>
