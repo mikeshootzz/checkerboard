@@ -32,8 +32,9 @@ function templatefunction3(){
 
 
 
-window.onload = templatefunction;
-window.onload = templatefunction2;
+templatefunction();
+templatefunction2();
+templatefunction3();
 
 
 
