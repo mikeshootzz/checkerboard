@@ -28,6 +28,36 @@ function templatefunction3(){
     randomcolor = auswahl[Math.floor(Math.random()*auswahl.length)];
     template3.style.background = randomcolor;
 }
+let template4 = document.getElementById('template4')
+function templatefunction4(){
+    randomcolor = auswahl[Math.floor(Math.random()*auswahl.length)];
+    template4.style.background = randomcolor;
+}
+let template5 = document.getElementById('template5')
+function templatefunction5(){
+    randomcolor = auswahl[Math.floor(Math.random()*auswahl.length)];
+    template5.style.background = randomcolor;
+}
+let template6 = document.getElementById('template6')
+function templatefunction6(){
+    randomcolor = auswahl[Math.floor(Math.random()*auswahl.length)];
+    template6.style.background = randomcolor;
+}
+let template7 = document.getElementById('template7')
+function templatefunction7(){
+    randomcolor = auswahl[Math.floor(Math.random()*auswahl.length)];
+    template7.style.background = randomcolor;
+}
+let template8 = document.getElementById('template8')
+function templatefunction8(){
+    randomcolor = auswahl[Math.floor(Math.random()*auswahl.length)];
+    template8.style.background = randomcolor;
+}
+let template9 = document.getElementById('template9')
+function templatefunction9(){
+    randomcolor = auswahl[Math.floor(Math.random()*auswahl.length)];
+    template9.style.background = randomcolor;
+}
 
 
 
@@ -35,6 +65,12 @@ function templatefunction3(){
 templatefunction();
 templatefunction2();
 templatefunction3();
+templatefunction4();
+templatefunction5();
+templatefunction6();
+templatefunction7();
+templatefunction8();
+templatefunction9();
 
 
 
