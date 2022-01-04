@@ -1,18 +1,53 @@
 let farbe;
+let currentColor = document.getElementById('currentColor')
 
 let rot = document.getElementById('red')
 function setred(){
     farbe = "red"
+    document.getElementById('currentColor').innerHTML=farbe;
+    currentColor.style.color = farbe;
 }
 
 let grun = document.getElementById('green')
 function setgreen(){
     farbe = "green"
+    document.getElementById('currentColor').innerHTML=farbe;
+    currentColor.style.color = farbe;
 }
+
+let purple = document.getElementById('purple')
+function setpurple(){
+    farbe = "purple"
+    document.getElementById('currentColor').innerHTML=farbe;
+    currentColor.style.color = farbe;
+}
+
+let turquoise = document.getElementById('turquoise')
+function setturquoise(){
+    farbe = "turquoise"
+    document.getElementById('currentColor').innerHTML=farbe;
+    currentColor.style.color = farbe;
+}
+
+let salmon = document.getElementById('salmon')
+function setsalmon(){
+    farbe = "salmon"
+    document.getElementById('currentColor').innerHTML=farbe;
+    currentColor.style.color = farbe;
+}
+
+let chocolate = document.getElementById('chocolate')
+function setchocolate(){
+    farbe = "chocolate"
+    document.getElementById('currentColor').innerHTML=farbe;
+    currentColor.style.color = farbe;
+}
+
+
 const templateArray = [];
 const colorArray = new Array(9);
 
-const auswahl = [ 'green', 'red' ];
+const auswahl = [ 'green', 'red', 'turquoise', 'purple', 'chocolate', 'salmon' ];
 let randomcolor = auswahl[Math.floor(Math.random()*auswahl.length)];
 
 
@@ -147,5 +182,7 @@ function checking(){
     }
     alert(`You had ${errorCount} mistakes`)
 }
+
+
 
 
