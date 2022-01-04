@@ -1,5 +1,6 @@
 let farbe;
 let currentColor = document.getElementById('currentColor')
+let clicks = 0;
 
 let rot = document.getElementById('red')
 function setred(){
@@ -121,55 +122,70 @@ let color = document.getElementById('button')
 function changeColor(){
     color.style.background = farbe;
     colorArray[0] = farbe;
+    clicks++;
 }
 let color2 = document.getElementById('button2')
 
 function changeColor2(){
     color2.style.background = farbe;
     colorArray[1] = farbe;
+    clicks++;
 }
 let color3 = document.getElementById('button3')
 
 function changeColor3(){
     color3.style.background = farbe;
     colorArray[2] = farbe;
+    clicks++;
 }
 let color4 = document.getElementById('button4')
 
 function changeColor4(){
     color4.style.background = farbe;
     colorArray[3] = farbe;
+    clicks++;
 }
 let color5 = document.getElementById('button5')
 
 function changeColor5(){
     color5.style.background = farbe;
     colorArray[4] = farbe;
+    clicks++;
 }
 let color6 = document.getElementById('button6')
 
 function changeColor6(){
     color6.style.background = farbe;
     colorArray[5] = farbe;
+    clicks++;
 }
 let color7 = document.getElementById('button7')
 
 function changeColor7(){
     color7.style.background = farbe;
     colorArray[6] = farbe;
+    clicks++;
 }
 let color8 = document.getElementById('button8')
 
 function changeColor8(){
     color8.style.background = farbe;
     colorArray[7] = farbe;
+    clicks++;
 }
 let color9 = document.getElementById('button9')
 
 function changeColor9(){
     color9.style.background = farbe;
     colorArray[8] = farbe;
+    clicks++;
 }
+var seconds = 0;
+function incrementSeconds() {
+    seconds += 1;
+}
+var cancel = setInterval(incrementSeconds, 1000);
+incrementSeconds();
 
 let check = document.getElementById('check')
 
@@ -180,7 +196,7 @@ function checking(){
             errorCount++;
         }
     }
-    alert(`You had ${errorCount} mistakes`)
+    alert(`You made ${errorCount} mistakes and it took you ${clicks} clicks in ${seconds} seconds`)
 }
 
 
